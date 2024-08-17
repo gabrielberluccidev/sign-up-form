@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOP | Sign Up Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="backimg"></div>
+
+      <div class="full-form">
+        <h4>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+        </h4>
+        <h4>Sign up now to get started.</h4>
+
+        <h4 id="dif">You know you want to.</h4>
+
+        <div class="form-data">
+          <h2>Let's do this</h2>
+          <form id="sign-form">
+            <div class="full-name">
+              <div class="input-label">
+                <label for="name">FIRST NAME</label>
+                <input required id="name" type="text" name="uname" />
+              </div>
+              <div class="input-label">
+                <label for="lname">LAST NAME</label>
+                <input required type="text" id="lname" name="lname" />
+              </div>
+            </div>
+
+            <div class="data">
+              <div class="input-label">
+                <label for="mail">EMAIL</label>
+                <input required type="email" name="umail" id="mail" />
+              </div>
+              <div class="input-label">
+                <label for="tel">PHONE NUMBER</label>
+                <input required type="tel" name="utel" id="tel" />
+              </div>
+            </div>
+
+            <div class="password">
+              <div class="input-label">
+                <label for="password">PASSWORD</label>
+                <input
+                  required
+                  type="password"
+                  name="upassword"
+                  id="password"
+                />
+                <span class="psw-error"></span>
+              </div>
+
+              <div class="input-label">
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input
+                  required
+                  type="password"
+                  name="uconfirmpassword"
+                  id="confirm-password"
+                />
+              </div>
+            </div>
+          </form>
+          <button form="sign-form" type="submit">Create account</button>
+          <p>Already have an account? <span>Log in</span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./validation.js"></script>
+  </body>
+</html>
